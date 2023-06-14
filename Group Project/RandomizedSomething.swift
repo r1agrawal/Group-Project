@@ -17,6 +17,8 @@ struct RandomizedSomething: View {
         let modes = ["Acrylic Painting", "Oil Painting", "Black and White Pencil Sketch", "Colored Pencil Sketch"]
         let randomMode = modes.randomElement()!
         
+        
+        
        //just for the backgroundvvv
         
         

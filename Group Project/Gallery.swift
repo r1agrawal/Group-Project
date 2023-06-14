@@ -23,14 +23,42 @@ struct Gallery: View {
                     Spacer()
                     Spacer()
                     
+                    Text("Simple Pencil/Pen Doodles")
+                    
                     ScrollView{
                         VStack{
                             ScrollView(.horizontal){
                                 HStack{
-                                    //put each image here, if you want do a horizontal scroll
-                                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                                    
+                                    Image("doodle1")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+
+                                    Image("doodle2")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)//
+                                    Image("doodle3")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)//
+                                    Image("doodle4")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)//
+                                    Image("doodle5")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
                                     
                                 }
+                                Color(red: 255/255, green: 200/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
                             }
                             ScrollView(.horizontal){
                                 HStack{
