@@ -9,7 +9,20 @@ import SwiftUI
 
 struct Gallery: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Color(red: 255/255, green: 232/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
+        
+        NavigationView {
+            VStack {
+                // title of page
+                
+                // tags
+                
+                // images + HStack
+                
+                // toolbar - nav links to generator, settings, about
+            }
+        }
+        
     }
 }
 
