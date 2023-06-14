@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct RandomizedSomething: View {
+    
+    @State var modeS = "Find a randomized mode of artwork!"
     var body: some View {
         
-       //just for the backgroundvvv
+        
         
         let modes = ["Acrylic Painting", "Oil Painting", "Black and White Pencil Sketch", "Colored Pencil Sketch"]
         let randomMode = modes.randomElement()!
         
-        @State var mode = "Find a randomized mode of artwork!"
+       //just for the backgroundvvv
+        
+        
         
         ZStack{
             Color(red: 255/255, green: 232/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
@@ -29,9 +33,9 @@ struct RandomizedSomething: View {
                 //space
                 Text("")
                 //modes of artwork
-                Text(mode)
+                Text(modeS)
                 Button("Click Me!!") {
-                    mode = String(randomMode)
+                    modeS = ("\(randomMode)")
                 //style of artwork
                     
                 //size of paper/canvas/etc.
