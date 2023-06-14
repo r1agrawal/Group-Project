@@ -10,45 +10,74 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-        ZStack{
-            Image("LaunchPage")
-                .resizable()
-                .frame(width: 400.0, height: 900.0)
             
-            //Spacer()
-            
-            
-            VStack{
-                Spacer()
-                    .frame(width: 100.0, height: 400.0)
-                /*NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
-                }*/
+            ZStack{
+                Color(red: 255/255, green: 232/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
                 
-                NavigationLink(destination: Gallery()) {
-                    Text("Launch")
-                }//END OF BUTTON
-                .buttonStyle(.borderedProminent)
-                .accentColor(Color(red: 203/255, green: 153/255, blue: 126/255, opacity: 1.0))
-                .buttonBorderShape(.capsule)
-                .controlSize(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
-                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                .foregroundColor(Color.black)
+                //background
+                VStack {
+                    Spacer()
+                    Image("brush-stroke")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 400.0, height: 200.0)
+                    Image("brush-stroke")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 400.0, height: 200.0)
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
+                } // vstack
+                .padding()
                 
-            }//vstack
-            
-                        
-            
-            
-            
-            //.accentColor(Color(hue: 0.279, saturation: 0.331, brightness: 0.847)
-            //(Color(hue: 0.279, saturation: 0.331, brightness: 0.847)).ignoresSafeArea()
-            //.tint(.pink)
-            
-        }//zstack
-        }//nav view
-    }//body
-}//content view
+                //the art un-blocked
+                VStack {
+                    Spacer()
+                    Text("Art")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .font(.custom("MarkerFelt-Thin", fixedSize: 34))
+                    Text("Un-")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                    Text("Blocked")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                    
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                }
+                
+                //button
+                VStack {
+                    Spacer()
+                    
+                    NavigationLink(destination: Gallery()) {
+                        Text("Launch")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .accentColor(Color(red: 203/255, green: 153/255, blue: 126/255, opacity: 1.0))
+                    .buttonBorderShape(.capsule)
+                    .controlSize(.large)
+                    .font(.largeTitle)
+                    .foregroundColor(Color.black)
+                    Text("Insert some text here")
+                }
+            }
+            // zstack
+        }// nav view
+    }// body
+}// content view
+
+// vstack
+
+//.accentColor(Color(hue: 0.279, saturation: 0.331, brightness: 0.847)
+//(Color(hue: 0.279, saturation: 0.331, brightness: 0.847)).ignoresSafeArea()
+//.tint(.pink)
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

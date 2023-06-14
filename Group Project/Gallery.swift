@@ -9,20 +9,61 @@ import SwiftUI
 
 struct Gallery: View {
     var body: some View {
-        Color(red: 255/255, green: 232/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
         
         NavigationView {
-            VStack {
-                // title of page
+            ZStack{
+                Color(red: 255/255, green: 232/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
                 
-                // tags
                 
-                // images + HStack
-                
-                // toolbar - nav links to generator, settings, about
+                VStack {
+                    //Gallery text
+                    Text("Gallery")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    Spacer()
+                    Spacer()
+                    
+                    ScrollView{
+                        VStack{
+                            ScrollView(.horizontal){
+                                HStack{
+                                    //put each image here, if you want do a horizontal scroll
+                                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                                    
+                                }
+                            }
+                            ScrollView(.horizontal){
+                                HStack{
+                                    //put each image here, if you want do a horizontal scroll
+                                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                                    
+                                }
+                            }
+                            ScrollView(.horizontal){
+                                HStack{
+                                    //put each image here, if you want do a horizontal scroll
+                                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                                    
+                                }
+                            }
+                        }
+                    }
+                    
+                    
+                    
+                    
+                    // title of page
+                    
+                    // tags
+                    
+                    // images + HStack
+                    
+                    // toolbar - nav links to generator, settings, about
+                }
             }
+            
+
         }
-        
     }
 }
 
