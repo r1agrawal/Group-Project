@@ -13,6 +13,7 @@ struct RandomizedAgain: View {
     @State var sketchS = "Randomize a type of sketch to draw!"
     @State var subjectS = "A randomized subject to make art about!"
     @State var colorS = "Challenge yourself and randomize a single color to work with!"
+    @State private var ideas = ""
     
     var body: some View {
         
@@ -120,6 +121,18 @@ struct RandomizedAgain: View {
                     
                     
             }
+                Text("Now combine your ideas and come up with some brilliant pieces!")
+                    .fontWeight(.heavy)
+                    .padding()
+                    .font(.title2)
+                
+                TextField("Formulate Your ideas here!", text: $ideas)
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .font(.title3)
+                    .border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .padding()
+
+                
         }//end of vstack
         }
     }//end of body

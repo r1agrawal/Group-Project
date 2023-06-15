@@ -37,7 +37,10 @@ struct ContentView: View {
                 }
             }
             // zstack
+            
         }// nav view
+        .navigationBarHidden(true)              
+        
         
     }// body
 }// content view

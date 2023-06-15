@@ -65,7 +65,7 @@ struct Contents: View {
             }
             }
         }
-        
+        .navigationBarBackButtonHidden(true)
     }
 }
 
