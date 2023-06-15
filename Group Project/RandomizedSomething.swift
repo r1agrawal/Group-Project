@@ -10,13 +10,17 @@ import SwiftUI
 struct RandomizedSomething: View {
     
     @State var modeS = "Find a randomized mode of artwork!"
+    @State var sketchS = "Randomize a sketch to draw!"
+    
     var body: some View {
         
         
         
-        let modes = ["Acrylic Painting", "Oil Painting", "Black and White Pencil Sketch", "Colored Pencil Sketch"]
+        let modes = ["Acrylic Painting", "Oil Painting", "Black and White Pencil", "Colored Pencil", "Chalk Pastel", "Oil Pastel", "Marker", "Felt Tip", "Crayon", "Paper Cut Outs", "Clay", "Play Dough"]
         let randomMode = modes.randomElement()!
         
+       // let sketches = ["Hair Sketch","Rough Fashion Sketch","Celebrity Sketch","Cute Character Sketch","Floral Design Sketch", "Abstract Design Sketch", "Landscape Sketch (Lake)", "Landscape Sketch (Mountains)", "Sketch a Loved One"]
+     //   let randomSketch = sketches.randomElement()!
         
         
        //just for the backgroundvvv
@@ -33,13 +37,22 @@ struct RandomizedSomething: View {
                     .font(.title)
                     .fontWeight(.heavy)
                     .padding()
-                //space
-                Text("")
+                
+                
                 //modes of artwork
                 Text(modeS)
                 Button("Click Me!!") {
                     modeS = ("\(randomMode)")
                 }
+                
+                
+                //sketches
+          //      Text(sketchS)
+     //           Button("Click Me!!") {
+         //           sketchS = ("\(randomSketch)")
+           //     }
+                
+                
                 //style of artwork
                     
                 //size of paper/canvas/etc.
