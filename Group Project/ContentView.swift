@@ -64,7 +64,6 @@ struct ContentView: View {
                     .controlSize(.large)
                     .font(.largeTitle)
                     .foregroundColor(Color.black)
-                    Text("Insert some text here")
                 }
             }
             // zstack

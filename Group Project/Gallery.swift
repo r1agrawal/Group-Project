@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Gallery: View {
     var body: some View {
-        
         NavigationView {
             ZStack{
                 Color(red: 255/255, green: 232/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
@@ -121,9 +120,6 @@ struct Gallery: View {
                         }
                     }
                     
-                    
-                    
-                    
                     // title of page
                     
                     // tags
@@ -131,6 +127,20 @@ struct Gallery: View {
                     // images + HStack
                     
                     // toolbar - nav links to generator, settings, about
+                    
+                    .toolbar {
+                        ToolbarItemGroup(placement: .status) {
+                            NavigationLink(destination: RandomizedAgain()) {
+                                Text("✨Inspiration Generator✨")
+                                    .fontWeight(.black)
+                                    
+
+                            }
+                        }
+                        
+                    }
+                    .tint(.black)
+                    
                 }
             }
             
