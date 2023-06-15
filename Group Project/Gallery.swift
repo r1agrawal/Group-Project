@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Gallery: View {
+    init() {
+            UIToolbar.appearance().barTintColor = UIColor.white
+        }
     var body: some View {
         NavigationView {
             ZStack{
@@ -19,6 +22,7 @@ struct Gallery: View {
                     Text("Gallery")
                         .font(.largeTitle)
                         .fontWeight(.black)
+                        .padding(.vertical)
                     Spacer()
                   
                     Text("Scroll through each photo strip for tons of creative inspiration!")
@@ -110,10 +114,44 @@ struct Gallery: View {
                                         .frame(width: 200, height: 200)
                                 }
                             }
+                            
+                            //nature painting text
+                            Text("Floral Paintings")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding(.top)
+                            Text("Paint these beautiful, floral-looking pieces using oil, acrylic, or other type of paint!")
+                                .padding()
+                           
+                           //naturepaintingpictures
                             ScrollView(.horizontal){
                                 HStack{
-                                    //put each image here, if you want do a horizontal scroll
-                                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
+                                    
+                                    Image("coolpainting1")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("coolpainting2")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("coolpainting3")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("coolpainting4")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("coolpainting5")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
                                     
                                 }
                             }
@@ -128,18 +166,25 @@ struct Gallery: View {
                     
                     // toolbar - nav links to generator, settings, about
                     
-                    .toolbar {
-                        ToolbarItemGroup(placement: .status) {
-                            NavigationLink(destination: RandomizedAgain()) {
-                                Text("✨Inspiration Generator✨")
-                                    .fontWeight(.black)
-                                    
-
-                            }
-                        }
-                        
-                    }
-                    .tint(.black)
+//                    .toolbar {
+//                        ToolbarItemGroup(placement: .status) {
+//                            NavigationLink(destination: RandomizedAgain()) {
+//                                Text("✨Inspiration Generator✨")
+//                                    .fontWeight(.black)
+//                            }
+//                            Text("|")
+//                            NavigationLink(destination: AboutUs()) {
+//                                Text("About")
+//                                    .fontWeight(.black)
+//
+//                            }
+//                        }
+//
+//                    }
+//
+//                    .tint(.black)
+                    
+                    
                     
                 }
             }

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Group_ProjectApp: App {
+    
+    
+    
     var body: some Scene {
         WindowGroup {
-            RandomizedAgain()
+            ContentView()
         }
     }
 }
