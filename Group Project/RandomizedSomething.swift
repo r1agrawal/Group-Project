@@ -32,22 +32,24 @@ struct RandomizedSomething: View {
                 Text("✨Inspiration Generator✨")
                     .font(.title)
                     .fontWeight(.heavy)
+                    .padding()
                 //space
                 Text("")
                 //modes of artwork
                 Text(modeS)
                 Button("Click Me!!") {
                     modeS = ("\(randomMode)")
+                }
                 //style of artwork
                     
                 //size of paper/canvas/etc.
                 
                 //trending design... etc..
                
-                    
-                    }
+                //to move everything up
+                Spacer()
+
                 }
-                
                 
            
             }

@@ -21,50 +21,94 @@ struct Gallery: View {
                         .font(.largeTitle)
                         .fontWeight(.black)
                     Spacer()
-                    Spacer()
-                    
-                    Text("Simple Pencil/Pen Doodles")
-                    
+                  
+                    Text("Scroll through each photo strip for tons of creative inspiration!")
+                        .font(.caption)
+                        .padding()
+
                     ScrollView{
                         VStack{
+                    //Doodles Text
+                    Text("Simple Doodles")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    Text("Grab a pen or pencil, some fun colorfulprops and create these cute ''photogenic'' sketches.")
+                        .padding()
+                    //Doodles and props pics
+                   
                             ScrollView(.horizontal){
                                 HStack{
                                     
-                                    Image("doodle1")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 200, height: 200)
-
-                                    Image("doodle2")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 200, height: 200)//
-                                    Image("doodle3")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 200, height: 200)//
-                                    Image("doodle4")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 200, height: 200)//
-                                    Image("doodle5")
-                                        .renderingMode(.original)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 200, height: 200)
-                                    
+                                        Image("doodle1")
+                                            .renderingMode(.original)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 200, height: 200)
+//can we round the edges?
+                                        Image("doodle2")
+                                            .renderingMode(.original)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 200, height: 200)//
+                                        Image("doodle3")
+                                            .renderingMode(.original)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 200, height: 200)//
+                                        Image("doodle4")
+                                            .renderingMode(.original)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 200, height: 200)//
+                                        Image("doodle5")
+                                            .renderingMode(.original)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 200, height: 200)
                                 }
-                                Color(red: 255/255, green: 200/255, blue: 214/255, opacity: 1.0).ignoresSafeArea()
+                                
                             }
+                            
+                            
+                            //Mandalatext
+                            Text("Mandala Art")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding(.top)
+                            Text("These are generally colorful circular designs, made with any mode. You can make these designs on multiple surfaces including paper, canvas, stones, and more. You can go traditional or modern!")
+                                .padding()
+                            
+                            
+                            //Mandalaimages
                             ScrollView(.horizontal){
                                 HStack{
-                                    //put each image here, if you want do a horizontal scroll
-                                    Image(/*@START_MENU_TOKEN@*/"Image Name"/*@END_MENU_TOKEN@*/)
-                                    
+                                   
+                                    Image("mandala1")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("mandala2")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                        .padding(.horizontal)
+                                    Image("mandala3")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("mandala4")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
+                                    Image("mandala5")
+                                        .renderingMode(.original)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 200, height: 200)
                                 }
                             }
                             ScrollView(.horizontal){
