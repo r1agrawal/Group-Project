@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2ECD172A3B639300E2CB5A /* RandomizedAgain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2ECD162A3B639300E2CB5A /* RandomizedAgain.swift */; };
 		CE550B902A38F5FC00F37547 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE550B8F2A38F5FC00F37547 /* Gallery.swift */; };
 		CE550B922A38F60900F37547 /* RandomizedSomething.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE550B912A38F60900F37547 /* RandomizedSomething.swift */; };
 		CE550B942A38F61B00F37547 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE550B932A38F61B00F37547 /* AboutUs.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2ECD162A3B639300E2CB5A /* RandomizedAgain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizedAgain.swift; sourceTree = "<group>"; };
 		CE550B8F2A38F5FC00F37547 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
 		CE550B912A38F60900F37547 /* RandomizedSomething.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizedSomething.swift; sourceTree = "<group>"; };
 		CE550B932A38F61B00F37547 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				CEFE78032A3773B800C11990 /* ContentView.swift */,
 				CE550B8F2A38F5FC00F37547 /* Gallery.swift */,
 				CE550B912A38F60900F37547 /* RandomizedSomething.swift */,
+				CE2ECD162A3B639300E2CB5A /* RandomizedAgain.swift */,
 				CE550B932A38F61B00F37547 /* AboutUs.swift */,
 				CEFE78052A3773BA00C11990 /* Assets.xcassets */,
 				CEFE78072A3773BA00C11990 /* Preview Content */,
@@ -149,6 +152,7 @@
 				CEFE78042A3773B800C11990 /* ContentView.swift in Sources */,
 				CE550B902A38F5FC00F37547 /* Gallery.swift in Sources */,
 				CE550B942A38F61B00F37547 /* AboutUs.swift in Sources */,
+				CE2ECD172A3B639300E2CB5A /* RandomizedAgain.swift in Sources */,
 				CEFE78022A3773B800C11990 /* Group_ProjectApp.swift in Sources */,
 				CE550B922A38F60900F37547 /* RandomizedSomething.swift in Sources */,
 			);
