@@ -26,20 +26,37 @@ struct RandomizedAgain: View {
                 .fontWeight(.heavy)
                 .padding()
             
-            
-            Text (modeS)
-            
-            
-            Button("Click Me!!") {
-                modeS = ("\(randomMode)")
+            VStack {
+                Text (modeS)
+                Button("Click Me!!") {
+                    modeS = ("\(randomMode)")
+                }
+                .buttonStyle(.borderedProminent)
+                .accentColor(Color(red: 203/255, green: 153/255, blue: 126/255, opacity: 1.0))
+                .buttonBorderShape(.capsule)
+                .controlSize(.large)
+                .font(.title3)
+                .foregroundColor(Color.black)
             }
+            //.background(Purple)
+            .padding()
             
             
-            Text(sketchS)
-                      Button("Click Me!!") {
-                       sketchS = ("\(randomSketch)")
-                          
-                      }
+            
+            VStack {
+                Text(sketchS)
+                Button("Click Me!!") {
+                    sketchS = ("\(randomSketch)")
+                    
+                }
+                .buttonStyle(.borderedProminent)
+                .accentColor(Color(red: 203/255, green: 153/255, blue: 126/255, opacity: 1.0))
+                .buttonBorderShape(.capsule)
+                .controlSize(.large)
+                .font(.title3)
+                .foregroundColor(Color.black)
+            }
+            .padding()
             
             Spacer()
         }//end of vstack
