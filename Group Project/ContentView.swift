@@ -45,52 +45,6 @@ struct ContentView: View {
     }// body
 }// content view
 
-// vstack
-
-//.accentColor(Color(hue: 0.279, saturation: 0.331, brightness: 0.847)
-//(Color(hue: 0.279, saturation: 0.331, brightness: 0.847)).ignoresSafeArea()
-//.tint(.pink)
-
-
-
-
-//background
-//                VStack {
-//                    Spacer()
-//                    Image("brush-stroke")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(width: 400.0, height: 200.0)
-//                    Image("brush-stroke")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(width: 400.0, height: 200.0)
-//                    Spacer()
-//                    Spacer()
-//                    Spacer()
-    
-//  } // vstack
-//                .padding()
-
-//the art un-blocked
-//                VStack {
-//                    Spacer()
-//                    Text("Art")
-//                        .font(.largeTitle)
-//                        .fontWeight(.heavy)
-//                        .font(.custom("MarkerFelt-Thin", fixedSize: 34))
-//                    Text("Un-")
-//                        .font(.largeTitle)
-//                        .fontWeight(.heavy)
-//                    Text("Blocked")
-//                        .font(.largeTitle)
-//                        .fontWeight(.heavy)
-//
-//                    Spacer()
-//                    Spacer()
-//                    Spacer()
-//                }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

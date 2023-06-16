@@ -47,7 +47,6 @@ struct Gallery: View {
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
                                             .frame(width: 200, height: 200)
-//can we round the edges?
                                         Image("doodle2")
                                             .renderingMode(.original)
                                             .resizable()
@@ -157,35 +156,7 @@ struct Gallery: View {
                             }
                         }
                     }
-                    
-                    // title of page
-                    
-                    // tags
-                    
-                    // images + HStack
-                    
-                    // toolbar - nav links to generator, settings, about
-                    
-//                    .toolbar {
-//                        ToolbarItemGroup(placement: .status) {
-//                            NavigationLink(destination: RandomizedAgain()) {
-//                                Text("✨Inspiration Generator✨")
-//                                    .fontWeight(.black)
-//                            }
-//                            Text("|")
-//                            NavigationLink(destination: AboutUs()) {
-//                                Text("About")
-//                                    .fontWeight(.black)
-//
-//                            }
-//                        }
-//
-//                    }
-//
-//                    .tint(.black)
-                    
-                    
-                    
+   
                 }
             }
             
